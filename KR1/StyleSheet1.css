@@ -1,0 +1,70 @@
+﻿:root {
+    --background: #29272b;
+    --color1: #514063;
+    --color2: #665579;
+    --color3: crimson;
+    --text1: white;
+    --text2: white;
+    --text3: silver;
+}
+
+body {
+    background-color: var(--background);
+    font-family: Arial;
+    color: var(--text1);
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Panel1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: var(--color1);
+}
+
+    #Panel2 {
+        margin-top: 20px;
+    }
+
+    #GridView1 {
+        width: 100%;
+        margin-top: 3px;
+        border: none;
+    }
+
+    #GridView1 tr:nth-child(1) > td {
+        background: var(--color1);
+        font-weight: bold;
+    }
+
+td {
+    padding: 10px;
+    font-size: 18px;
+    background: var(--color2);
+}
+
+input[type="submit"] {
+    border: 0px;
+    background-color: var(--color2);
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color: var(--text1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+span {
+    font-weight: bold;
+    color: var(--text3);
+}
